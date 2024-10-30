@@ -48,7 +48,7 @@ def run_script():
     try:
         script_path = get_script_path()
         print("Running the script at:", script_path)
-        result = subprocess.run([sys.executable, script_path], check=True)
+        result = subprocess.run(["python", script_path], check=True)
         print("Script finished with return code:", result.returncode)
     except subprocess.CalledProcessError as e:
         print(f"Script execution failed: {e}")
