@@ -69,7 +69,7 @@ if __name__ == "__main__":
             print(f"version is {current_version}") 
 
     latest_version = get_latest_version()
-
+    print(f"lastest version is {latest_version}") 
     if latest_version != current_version:
         print("Updating script...")
         download_update()
