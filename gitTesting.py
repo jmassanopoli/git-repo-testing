@@ -63,8 +63,10 @@ def run_script():
 if __name__ == "__main__":
     current_version = ''
     if os.path.exists('version.txt'):
+        print("version.txt is there")
         with open('version.txt', 'r') as version_file:
             current_version = version_file.read().strip()
+            print(f"version is {current_version}") 
 
     latest_version = get_latest_version()
 
