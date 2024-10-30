@@ -5,9 +5,9 @@ import subprocess
 import sys
 
 # URL for the latest script
-SCRIPT_URL = 'https://raw.githubusercontent.com/myusername/my_repo/main/script.py'
-VERSION_URL = 'https://raw.githubusercontent.com/myusername/my_repo/main/version.txt'
-CURRENT_VERSION = '1.0'  # Update this when you change script.py
+SCRIPT_URL = 'https://raw.githubusercontent.com/jmassanopoli/git-repo-testing/refs/heads/main/script.py?token=GHSAT0AAAAAACZWEKHCQH7UB6CX2LL3OMNYZZCMU4Q'
+VERSION_URL = 'https://raw.githubusercontent.com/jmassanopoli/git-repo-testing/refs/heads/main/version.txt?token=GHSAT0AAAAAACZWEKHDKAIHND7AIA2DU4EYZZCMVNA'
+CURRENT_VERSION = '0'  # Update this when you change script.py
 
 def check_for_updates():
     response = requests.get(VERSION_URL)
